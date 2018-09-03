@@ -10,8 +10,7 @@ import java.util.Date;
 public class Commande {
 
     @Id
-    @GeneratedValue
-    private int id;
+    @GeneratedValue private int id;
 
     private Integer productId;
 
@@ -20,6 +19,7 @@ public class Commande {
     private Integer quantite;
 
     private Boolean commandePayee;
+
 
     public Commande() {
     }
