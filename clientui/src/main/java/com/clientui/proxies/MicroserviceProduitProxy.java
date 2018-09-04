@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
-import java.util.Optional;
-@RibbonClient(name = "microservice-produits")
+
 @FeignClient(name = "microservice-produits")
+@RibbonClient(name = "microservice-produits")
 public interface MicroserviceProduitProxy {
     @GetMapping(value = "/Produits")
     List<ProductBean> listeDesProduits();
