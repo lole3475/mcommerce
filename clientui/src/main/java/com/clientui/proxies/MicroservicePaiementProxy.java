@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
-@FeignClient(name ="microservice-paiement")
+@FeignClient(name ="zuul-server")
 @RibbonClient(name="microservice-paiement")
 public interface MicroservicePaiementProxy {
 
